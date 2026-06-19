@@ -1,0 +1,7 @@
+
+CREATE OR REPLACE PROCEDURE test_proc AS
+BEGIN
+  INSERT INTO emp VALUES (1);
+  UPDATE emp SET name='A';
+  DELETE FROM emp WHERE id=1;
+END;
