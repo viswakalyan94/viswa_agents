@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DB Object Reference Report</title>
+  <style>
+    :root {
+      --bg: #f7f8fc;
+      --surface: #ffffff;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --accent: #0f766e;
+      --border: #d1d5db;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      color: var(--ink);
+      background: radial-gradient(circle at top right, #d1fae5 0%, var(--bg) 45%);
+      min-height: 100vh;
+      padding: 24px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(17, 24, 39, 0.08);
+      overflow: hidden;
+    }
+    .header {
+      padding: 20px 24px;
+      background: linear-gradient(120deg, #134e4a, #0f766e);
+      color: #ecfeff;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.2rem;
+      letter-spacing: 0.02em;
+    }
+    .subtitle {
+      margin-top: 6px;
+      color: #a7f3d0;
+      font-size: 0.9rem;
+    }
+    .table-wrap {
+      padding: 16px;
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+    thead th {
+      text-align: left;
+      padding: 12px;
+      background: #ecfeff;
+      border-bottom: 2px solid var(--border);
+      color: #0f172a;
+    }
+    tbody td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #eef2f7;
+      vertical-align: top;
+    }
+    tbody tr:hover {
+      background: #f8fafc;
+    }
+    .muted {
+      color: var(--muted);
+      font-size: 0.84rem;
+      padding: 0 16px 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>DB Object Reference Report</h1>
+      <div class="subtitle">Object references discovered from SQL samples</div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Object Name</th>
+            <th>Object Type</th>
+            <th>Reference Count</th>
+            <th>File Line Number</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>CALC_ANNUAL_BONUS</td><td>FUNCTION</td><td>1</td><td>9</td></tr>
+<tr><td>HR_COMP_PKG</td><td>PACKAGE</td><td>1</td><td>15</td></tr>
+<tr><td>HR_DEPT_PAYROLL_MV</td><td>MATERIALIZED VIEW</td><td>1</td><td>8</td></tr>
+<tr><td>HR_EMPLOYEE_AUDIT_TRG</td><td>TRIGGER</td><td>1</td><td>2</td></tr>
+<tr><td>HR_EMPLOYEE_DATA</td><td>SYNONYM</td><td>1</td><td>1</td></tr>
+<tr><td>HR_EMPLOYEE_VW</td><td>VIEW</td><td>1</td><td>6</td></tr>
+<tr><td>REFRESH_HR_PAYROLL</td><td>PROCEDURE</td><td>1</td><td>6</td></tr>
+<tr><td>SQL_MONTH_END_OPS</td><td>SQL</td><td>2</td><td>1,4</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="muted">Reference count is the number of unique line hits across selected sample scope.</div>
+    <div class="muted">Generated at (UTC): 2026-06-25 10:23:31Z | Output file: .github/agents/output/db_object_reference_report.html</div>
+  </div>
+</body>
+</html>
